@@ -56,6 +56,27 @@ public class TwoSum {
         return indices;
     }
 
+
+/** Algorithm: 
+    1. Compute the difference value between target and each integer in the array;
+    2. Compare those integers behind to the value, if match, update the return indices.
+    This is a brutal force algorithms, using nested loop, so the algorithm runs O(nlgn) time.
+*/    
+    public static int[] twoSum2(int[] nums, int target) {
+        int[] indices={-1,-1};
+        
+        for (int i=0; i<nums.length; i++) {
+            int diff=target-nums[i];
+            for (int j=i+1; j<nums.length; j++) {
+                if (nums[j]==diff) {
+                    indices[0]=i;
+                    indices[1]=j;
+                }
+            }
+        }        
+        return indices;
+    } 
+
     
     //Test driver
     public static void main(String[] args) {
