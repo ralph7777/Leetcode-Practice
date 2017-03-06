@@ -2,7 +2,7 @@ package ralphLC;
 
 import java.util.Arrays;
 
-/** Algorithm: 
+/** Algorithm (Two pointers): 
     1. Sort the integer array;
     2. Set two points, search from the beginning and the end of sorted array to find two numbers;
     3. Determine the indices in the original array.    
@@ -57,10 +57,10 @@ public class TwoSum {
     }
 
 
-/** Algorithm: 
+/** Algorithm (Double nested Loop): 
     1. Compute the difference value between target and each integer in the array;
     2. Compare those integers behind to the value, if match, update the return indices.
-    This is a brutal force algorithms, using nested loop, so the algorithm runs O(nlgn) time.
+    This is a brutal force algorithms, using double nested loop, so the algorithm runs O(nlgn) time.
 */    
     public static int[] twoSum2(int[] nums, int target) {
         int[] indices={-1,-1};
