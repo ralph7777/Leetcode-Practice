@@ -47,7 +47,7 @@ public class ThreeSum {
         			end--;
         		}
         		else {
-                	List<Integer> subset=new ArrayList<Integer>();
+                		List<Integer> subset=new ArrayList<Integer>();
         			subset.add(nums[i]);
         			subset.add(nums[start]);
         			subset.add(nums[end]);
