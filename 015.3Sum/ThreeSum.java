@@ -76,14 +76,14 @@ public class ThreeSum {
         		for (int k=j+1; k<len; k++) {
         			if ((nums[i]+nums[j]+nums[k])==0) {
         				List<Integer> subset=new ArrayList<Integer>();
-            			subset.add(nums[i]);
-            			subset.add(nums[j]);
-            			subset.add(nums[k]);
-            			Collections.sort(subset);
-            			if (!result.contains(subset)) {
-            				result.add(subset);
+            				subset.add(nums[i]);
+            				subset.add(nums[j]);
+            				subset.add(nums[k]);
+            				Collections.sort(subset);
+            				if (!result.contains(subset)) {
+            					result.add(subset);
+            				}	
             			}
-            		}
         		}
         	}
         }
