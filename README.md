@@ -1,2 +1,2 @@
 # Leetcode practice
-This pros contains my personal Leetcode practice.
+Carpe diem! This pros contains my personal Leetcode practices.
