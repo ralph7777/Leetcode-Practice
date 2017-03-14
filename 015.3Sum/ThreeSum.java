@@ -13,7 +13,7 @@ import java.util.List;
     4. For every right solution, store the three numbers in a List and add it to the output List.    
     Step 1 runs O(nlgn); Step 2 iterates through n entries, then step 3 use two pointers to find
     the other two entries, so it totally costs O(n*(n-1))=O(n*n).The algorithm runs O(n2) time.
-*/
+  */
 public class ThreeSum {
 
     public static List<List<Integer>> threeSum(int[] nums) {
@@ -63,10 +63,10 @@ public class ThreeSum {
     }
     
 /** Algorithm (Triple nested Loop): 
-    Iterate through all entries in array, try combination of all possible three numbers, store right
-    three numbers in a List and add it to the output List.
-    This is a brutal force algorithms, using triple nested loop, so the algorithm runs O(n3) time.
-*/
+    Iterate through all entries in array, try combination of all possible three numbers,
+    store right three numbers in a List and add it to the output List.
+    This is a brutal force algorithms, using triple nested loop, so it runs O(n3) time.
+  */
 
     public static List<List<Integer>> threeSum2(int[] nums) {
         List<List<Integer>> result=new ArrayList<List<Integer>>();
