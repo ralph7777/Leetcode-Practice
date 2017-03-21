@@ -1,2 +1,2 @@
 # Leetcode practice
-This pros contains my personal Leetcode practices. Carpe diem! 
+This repo contains my personal Leetcode practices. Carpe diem! 
