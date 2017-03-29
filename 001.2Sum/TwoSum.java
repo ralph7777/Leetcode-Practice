@@ -2,15 +2,16 @@ package ralphLC;
 
 import java.util.Arrays;
 
-/** Algorithm (Two pointers): 
-    1. Sort the integer array;
-    2. Set two points, search from the beginning and the end of sorted array to find two numbers;
-    3. Determine the indices in the original array.    
-    Step 1 runs O(nlgn), Step 2 runs O(n), Step 3 runs O(n). The algorithm runs O(nlgn) time.
-*/
 public class TwoSum {
 	
     public static int[] twoSum(int[] nums, int target) {
+    /** Algorithm (Two pointers): 
+     *  1. Sort the integer array;
+     *  2. Set two points, search from the beginning and the end of sorted array to find two numbers;
+     *  3. Determine the indices in the original array.    
+     *  Step 1 runs O(nlgn), Step 2 runs O(n), Step 3 runs O(n). The algorithm runs O(nlgn) time.
+     */    
+	    
         int n=nums.length;
         int[] nums2 = Arrays.copyOf(nums,n);
         
@@ -57,12 +58,12 @@ public class TwoSum {
     }
 
 
-/** Algorithm (Double nested Loop): 
-    1. Compute the difference value between target and each integer in the array;
-    2. Compare those integers behind to the value, if match, update the return indices.
-    This is a brutal force algorithms, using double nested loop, so the algorithm runs O(nlgn) time.
-*/    
     public static int[] twoSum2(int[] nums, int target) {
+    /** Algorithm (Double nested Loop): 
+     *  1. Compute the difference value between target and each integer in the array;
+     *  2. Compare those integers behind to the value, if match, update the return indices.
+     *  This is a brutal force algorithms, using double nested loop, so the algorithm runs O(nlgn) time.
+     */     
         int[] indices={-1,-1};
         
         for (int i=0; i<nums.length; i++) {
@@ -89,5 +90,5 @@ public class TwoSum {
 	target=6;
 	indices=twoSum(nums2,target);
 	System.out.printf("[%d,%d]",indices[0],indices[1]);
-	}
+    }
 }
