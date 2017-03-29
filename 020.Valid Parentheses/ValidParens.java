@@ -43,10 +43,9 @@ public class ValidParens {
         return flag;
     }
 
-	public static void main(String[] args) {
-		String s1="{";
-		System.out.println("String "+s1+ " is " +isValid(s1));
-
-	}
+    public static void main(String[] args) {
+	String s1="{";
+	System.out.println("String "+s1+ " is " +isValid(s1));
+    }
 
 }
